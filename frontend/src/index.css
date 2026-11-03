@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0c;
+  --bg-card: #121215;
+  --bg-card-hover: #17171c;
+  --border: #232328;
+  --border-light: #2e2e36;
+  --yellow-accent: #facc15; /* Bright energetic cyber-yellow */
+  --yellow-glow: rgba(250, 204, 21, 0.15);
+  --yellow-dark: #ca8a04;
+  --text-main: #ffffff;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.015em;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #232328;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
+
+/* Bento card styling */
+.bento-card {
+  background: #111114;
+  border: 1px solid #202026;
+  border-radius: 1rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-card:hover {
+  border-color: #facc15;
+  box-shadow: 0 0 20px -5px rgba(250, 204, 21, 0.12);
+}
+
+/* Yellow accent badge */
+.badge-yellow {
+  background: rgba(250, 204, 21, 0.1);
+  color: #facc15;
+  border: 1px solid rgba(250, 204, 21, 0.25);
+}
+
+/* Inputs */
+input, select {
+  transition: all 0.15s ease;
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: #facc15 !important;
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.2);
+}
