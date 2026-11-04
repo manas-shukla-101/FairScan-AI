@@ -75,7 +75,7 @@ FairScan eliminates the friction:
 * **Explanation Layer**: Groq Cloud API, Google Gemini API, and Deterministic Offline Rule Engine
 * **Report Generation**: ReportLab PDF Engine (Two-pass `NumberedCanvas` with "Page X of Y")
 * **Testing**: pytest (18 passing tests with 100% coverage)
-
+ 
 ---
 
 ## 🎯 Strategic Logic Flow
